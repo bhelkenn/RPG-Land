@@ -1,0 +1,30 @@
+The following changes and bug fixes have been made to the program:
+
+1.	Modified item-stat-gain to increment multiplicatively, rather than exponentially.
+2.	Boss health set to triple that of creature health.
+3.	Restructured damage calculation to more accurately scale; Spell damage calculation unaffected.
+4.	Boss and creature difficulty increased.
+5.	Fixed a bug where program crashed during damage calculation (integer representation of damage sometimes equaled skew, which resulted in a division by zero exception).
+6.	Moved helper function for determining type of creature inside of the Creature class.
+7.	Damage variance increased to 30%.
+8.	Fixed bugs where incorrect input would cause the program to crash (Replaced "cin >>" operations with helper functions that validate input based on the type required (int and char)).
+9.	Fixed a bug where creating a new character from the Load or New menu sometimes corrupted new character's attributes.
+10.	Added an attribute bonus of 2x equipment level to relevant attribute.
+11.	Modified the 3rd equipment slot to be a specialty slot for the class (Warriors -> Shield, Rogues -> Weapon (2nd weapon), Mages -> Offhand). NOTE: Corrupts existing saved games.
+12.	Fixed a bug where current mana level wasn't displaying properly, even though calculation and tracking was occuring normally.
+13.	Removed creature ability to parry incoming spells.
+14.	Fixed a bug where spells were not increasing with level.
+15.	Fixed a bug where Steelskin didn't wear off at end of combat.
+16.	Fixed a bug where, when multiple load options are available, everything after the first option didn't load.
+17.	Fleshed out spellcasting out of combat. You can still only cast Salve, but the display is nicer.
+18.	Updated spellcasting so cost is no longer a function of magnitude. A strong reason for this is that offensive spells should deal high damage with low cost, where healing requires a higher mana ratio.
+19.	Added a fail chance when attempting to run. The more aggressive the creature, the harder it is to escape. Bosses are somewhat harder to escape than creatures.
+20.	Reduced memory leaking by modifying all functions to pass the Player by reference, rather than making a new copy each time.
+21.	Fixed a bug where you could apparently unequip an empty slot, only when something was equipped in a different slot.
+22.	Dagger bonus for Rogues increased to 5x, up from 2x.
+23.	Fixed a bug where attempting to unequip something (with nothing equipped) didn't provide a message stating that.
+24.	Crit chance now scales with weapon levels for Rogues (10% base + 3% per level, per weapon).
+25.	Added an equipment damage / repair feature. You now suffer damage to your equipment for various actions in the wild. You can repair this damage at a Blacksmith.
+26.	Added a quest feature. NOTE: Corrupts existing saved games.
+27.	Map generation adjusted to match the level of the boss required for the active quest.
+28.	Fixed a major bug where saving a game corrupted the currently running instance and required a restart of the program.

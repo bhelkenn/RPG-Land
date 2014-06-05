@@ -1,0 +1,28 @@
+The following changes and bug fixes have been made to the program:
+
+1.	Added flavor that references the previous boss's name when accepting the next quest.
+2.	Clarified Rogue and Warrior class abilities in the combat menu.
+3.	Fixed a bug where if you levelled up from turning in a quest, shops wouldn't update their inventory immediately.
+4.	Fixed a visual bug where the experience required to get to the next level can be realistically achieved at max level.
+5.	Restructured entire program to compile from multiple files, allowing more additional flexibility and scalability. Also helps reduce debugging complexity by making it easier to identify problem file.
+6.	Added more detail to the "Stay the night" menu options, primarily flavor.
+7.	Minor improvements to save and load functions (reduced function and player calls).
+8.	Removed health and mana details from save/load functions, since this is calculated during each stat refresh. NOTE: Breaks all existing save games.
+9.	Increased health meter increment multiplier from stamina to 2x (up from 1x) for Rogues and Mages to match Warrior calculation. Warrior still gets bonus stamina.
+10.	Reduced equip gain bonuses to base attributes to just affect the primary offensive stat (STR -> Warrior, AGI -> Rogue, INT -> Mage).
+11.	Changed defensive creatures to turtles, instead of midgets (a little more appropriate; provides better flow).
+12.	Restructured "quit game" mechanic to reduce complexity.
+13.	Restructured "new player" mechanics to reduce complexity (created new helper function "init_new_player()").
+14.	Fixed a bug where the quest titles weren't displaying after the first one.
+15.	Fixed a bug where if no random loot was generated for a creature or boss, the program would crash.
+16.	Added an achievement system. NOTE: Corrupts existing saved games.
+17.	Removed health_bonus as a factor - health gained now occurs from stamina sources only.
+18.	Adjusted all equipment to offer stamina bonuses, rather than just Warrior gear.
+19.	Weighted attribute gain for items according to their primary function (Shields and armor get boosted stamina, weapons boosted offensive attribute, etc.).
+20.	Balanced attribute gain to be even for all classes, instead adjusting stat changes (def and atk bonuses) based on subtype.
+21.	Fixed a bug where viewing attack rating when viewing details about equipment multiplies out of control.
+22.	Fixed a bug where attack bonus calculation wasn't occurring correctly. As a result, restricted the attack bonus to Daggers for Rogues.
+23.	Fixed a bug where saving a game at a higher level was saving multiple "files" even though it was actually replacing the earlier file info.
+24.	Fixed a bug where loading the player's level from a save game was actually falsely loading at one level higher.
+25.	Created a banner for the game, along with basic flavor text.
+26.	Fixed a bug where unequipping gear generated in-game error text referring to the level being invalid.

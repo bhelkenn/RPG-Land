@@ -1,0 +1,27 @@
+The following changes and bug fixes have been made to the program:
+
+1.	Fixed a bug with calculating whether a spell hits in combat.
+2.	Fixed a bug with calculating creature encounter chances.
+3.	Fixed a bug where the inn was no longer providing an option to stay the night.
+4.	Fixed a bug where spell critical hits weren't calculated correctly.
+5.	Fixed a bug where you could continue casting spells without sufficient mana.
+6.	Fixed a bug where you could enter combat before entering town.
+7.	Internally grouped and organized code to optimize memory usage and readability.
+8.	Set map of the wild to increase in size as you level.
+9.	Added a feature to earn bonus experience and gold for fully exploring a given map.
+10.	Granted a 2x bonus to critical chance and dodge to Rogues.
+11.	Adjusted block rating to scale by level of shield equipped, up to a max of 25% block chance.
+12.	Removed armor_rating as a variable, as it was indistinguishable from equip_def_bonus. NOTE: Corrupts all existing save games.
+13.	Reduced several requirements for what gets saved to file during a save game. NOTE: Corrupts all existing save games.
+14.	Optimized and streamlined stat updating to take the brunt of the work from equipping / unequipping functions away, which also improved consistency in bonus calculation.
+15.	Reduced overhead of the load game feature by reducing the number of function calls and optimizing equipment handling.
+16.	Restructured equipment a little to provide the possibility for additional equipment slots in future patches.
+17.	Added a damage variance calculation to all damage of 15% (85% - 100%).
+18.	Cleaned up warnings that were starting to pile up at compile time involving data loss from decimals to integers.
+19.	System calls removed for security reasons and replaced with helper functions.
+20.	Expanded code framework to allow for more in-depth expansion of each player class. NOTE: Corrupts all existing save games.
+21.	Made gold viewable from the "View inventory" menu.
+22.	Removed player level as a savable attribute. Experience is able to dictate resulting level more accurately. NOTE: Corrupts all existing save games.
+23.	Enabled creature encounters to be any level up to current level.
+24.	Adjusted health of defensive creatures (midgets) to half.
+25.	Made player's level viewable from the load game screen.

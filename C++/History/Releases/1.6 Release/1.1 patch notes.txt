@@ -1,0 +1,9 @@
+The following changes and bug fixes have been made to the program:
+
+1.	Added an option to cancel out of the "Use Item" menu without using an item.
+2.	Added an option to cancel out of the "Cast a spell" menu without casting a spell.
+3.	Removed "parrying" as a factor from spell damage.
+4.	Added an option to cast healing spell out of combat.
+5.	Added spellpower as a factor. This is calculated as intellect / ATTRIB_BONUS (which is 5).
+6.	Mana hidden as a viewable stat for non-Mage players
+7.	Restructured Blacksmiths and Inns to pull from a central source, thereby reducing the complexity and overhead of the software.

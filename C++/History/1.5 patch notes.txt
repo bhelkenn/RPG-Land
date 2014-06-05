@@ -1,0 +1,10 @@
+The following changes and bug fixes have been made to the program:
+
+1.	Fixed a bug where attempting to cancel casting a spell (out of combat) got registered as an invalid entry.
+2.	Added "Requires Level" text when displaying shop inventory (blacksmith and inn), as well as player inventory.
+3.	Fixed a bug where you can crash the program by choosing an invalid entry when viewing detailed info about an item in inventory.
+4.	Added detailed prompts whenever an incorrect input is detected for the menu.
+5.	Fixed a bug where creating a new character when one already exists causes a freeze when attempting to leave town.
+6.	Combined casting functions with a bool variable to dictate in-combat vs. out-of-combat behavior (reduces code complexity and increases stability).
+7.	Added a description for every item, displayed when viewing an item in detail.
+8.	Decreased escape chance from creatures to 75% +/- 10% based on creature stance; boss encounters' escape chance decreased to 30% +/- 10%;

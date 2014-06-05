@@ -1,0 +1,15 @@
+The following changes and bug fixes have been made to the program:
+
+1.	Fixed a bug where you accept the quest every time you leave town, even if you already accepted the same quest.
+2.	Drastically reduced the interfacing required to the player class object in order to save and load games.
+3.	Purged unused call functions within Player class object.
+4.	Added descriptions of the four base attributes to the player menu and the level-up settings.
+5.	Restructured point hand-out to allow 10 points at character creation and 5 points per level.
+6.	Added descriptions in the blacksmith buy menu to better indicate that there is equipment you need to level to use.
+7.	Added stat views for items, both in shop buy menus as well as equipment / inventory views.
+8.	Added a more evolved conversation for all boss quests after the initial one.
+9.	Added one-level-higher gear and potions for purchase. Set restrictions to disallow use or equipping of items higher than current level.
+10.	Fixed a minor bug in equipment selection within the equip menu.
+11.	Made creatures and bosses capable of allowing multiple loot items, including trash, potions, and equipment.
+12.	Added an instance mode for bosses to provide additional role-playing flavor.
+13.	Added additional helper functions for end-of-combat processes based on various death and kill scenarios (reduces complexity of code).
