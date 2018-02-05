@@ -1,0 +1,6 @@
+Give us a goal to move out for, a quest system to give the game meaning early. 
+The more compelling, the more invested the user will get.
+
+1.	In the inn... can you give the option of talking to wayward souls, in hopes of gaining a companion?
+2.	Create side quests.
+3.	See if you can remove Enter from input
